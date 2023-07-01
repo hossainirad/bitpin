@@ -32,7 +32,7 @@ class ArticleRate(models.Model):
 		related_name="user_rates",
 		verbose_name=_("user"),
 	)
-	rate = models.IntegerField(_("rate"), default=0)
+	rate = models.SmallIntegerField(_("rate"), default=0)
 
 	def __str__(self):
 		return f"{self.article.title} - {self.user.email}"
