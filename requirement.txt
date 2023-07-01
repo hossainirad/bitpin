@@ -1,0 +1,11 @@
+Django==4.2
+django-extensions==3.2.3
+Faker==18.11.2
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.0.0
+django-cors-headers==3.10.0
+drf-spectacular==0.22.1
+psycopg2-binary==2.9.2
+python-dotenv==0.19.2
+pyjwt~=2.4.0
+whitenoise==6.2.0
