@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.urls import path, include
 from django.urls import path
 from drf_spectacular.views import (
     SpectacularAPIView,
@@ -13,6 +14,7 @@ admin.site.site_header = 'Bitpin Administration'
 
 urlpatterns = [
     path("s-admin/", admin.site.urls),
+    path('api/', include('article.urls')),
     path('api/schema/', SpectacularAPIView.as_view(api_version='v1'), name='schema'),
     path(
         'api/schema/swagger-ui/',
